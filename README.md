@@ -1,4 +1,4 @@
-# 🎛️ BeatFlow Content Studio
+# 🎛️ BeatScript
 
 > Marketing tools for music producers. Beat titles, YouTube SEO, social captions, bios, and pricing copy — in seconds.
 
@@ -12,7 +12,7 @@
 git init
 git add .
 git commit -m "initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/beatflow-content-studio.git
+git remote add origin https://github.com/YOUR_USERNAME/beatscript.git
 git push -u origin main
 ```
 
@@ -22,7 +22,7 @@ git push -u origin main
 3. Import your GitHub repo
 4. Click **Deploy** — that's it. Vercel auto-detects Next.js.
 
-Your app will be live at `https://beatflow-content-studio.vercel.app` (or your custom domain).
+Your app will be live at `https://beatscript.vercel.app` (or your custom domain).
 
 ### 3. Custom Domain (optional, ~$10/yr)
 - Buy a domain on Namecheap or Cloudflare

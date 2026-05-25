@@ -63,7 +63,7 @@ function UpgradeModal({ onClose }) {
         </div>
 
         <div style={S.pricingCard}>
-          <div style={{ fontFamily: "Bebas Neue", fontSize: 28, letterSpacing: "0.05em" }}>BeatFlow Pro</div>
+          <div style={{ fontFamily: "Bebas Neue", fontSize: 28, letterSpacing: "0.05em" }}>BeatScript Pro</div>
           <div style={{ display: "flex", alignItems: "baseline", gap: 4, margin: "8px 0 4px" }}>
             <span style={{ fontFamily: "Bebas Neue", fontSize: 48, color: "var(--accent)" }}>$9</span>
             <span style={{ color: "var(--muted)", fontSize: 14 }}>/month</span>
@@ -145,14 +145,14 @@ export default function Home() {
     const blob = new Blob([result], { type: "text/plain" });
     const url  = URL.createObjectURL(blob);
     const a    = document.createElement("a");
-    a.href = url; a.download = `beatflow-${currentKey}-${Date.now()}.txt`;
+    a.href = url; a.download = `beatscript-${currentKey}-${Date.now()}.txt`;
     a.click(); URL.revokeObjectURL(url);
   };
 
   return (
     <>
       <Head>
-        <title>BeatFlow Content Studio — Marketing Tools for Music Producers</title>
+        <title>BeatScript — Marketing Tools for Music Producers</title>
         <meta name="description" content="Generate beat titles, YouTube SEO, social captions, bios, and pricing copy in seconds. Built for BeatStars producers." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎛️</text></svg>" />
@@ -168,7 +168,7 @@ export default function Home() {
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <div style={S.logo}>🎛️</div>
               <div>
-                <div style={S.logoText}>BeatFlow Content Studio</div>
+                <div style={S.logoText}>BeatScript</div>
                 <div style={S.logoSub}>Marketing tools for music producers</div>
               </div>
             </div>
@@ -320,7 +320,7 @@ export default function Home() {
         {/* ── Footer ── */}
         <footer style={S.footer}>
           <div style={{ opacity: 0.4, fontSize: 12, fontFamily: "DM Mono, monospace" }}>
-            © {new Date().getFullYear()} BeatFlow Content Studio · Built for producers who move different
+            © {new Date().getFullYear()} BeatScript · Built for producers who move different
           </div>
         </footer>
       </div>
