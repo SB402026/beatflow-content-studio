@@ -75,7 +75,10 @@ function UpgradeModal({ onClose }) {
               <span style={{ fontSize: 13, color: "var(--text)" }}>{f}</span>
             </div>
           ))}
-          <button style={S.ctaBtn} onClick={() => alert("Connect your Stripe/Whop payment link here!")}>
+          <button style={S.ctaBtn} onClick={() => {
+            window.fbq?.('track', 'InitiateCheckout', { value: 9, currency: 'USD' });
+            window.open('https://whop.com/beatscript-studio/', '_blank');
+          }}>
             Upgrade to Pro →
           </button>
           <div style={{ fontSize: 11, color: "var(--muted)", textAlign: "center", marginTop: 10 }}>
@@ -131,6 +134,7 @@ export default function Home() {
 
     setResult(out);
     setRemaining(getRemainingAll(isPro));
+    window.fbq?.('track', 'Lead', { content_name: currentKey, content_category: 'beat_marketing_tool' });
   };
 
   const handleCopy = () => {
@@ -174,15 +178,13 @@ export default function Home() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               {!isPro && (
-                <button style={S.upgradeBtn} onClick={() => setShowModal(true)}>
+                <button style={S.upgradeBtn} onClick={() => {
+                  window.fbq?.('track', 'InitiateCheckout', { value: 9, currency: 'USD' });
+                  setShowModal(true);
+                }}>
                   Upgrade to Pro
                 </button>
               )}
-              {/* DEV toggle — remove in production */}
-              <button style={S.devBtn} onClick={() => { setIsPro(p => !p); setResult(""); }}
-                title="Dev: toggle Pro">
-                {isPro ? "PRO ✓" : "FREE"}
-              </button>
             </div>
           </div>
         </header>
