@@ -21,8 +21,8 @@ export default function App({ Component, pageProps }) {
           src="https://www.facebook.com/tr?id=687055656896371&ev=PageView&noscript=1" />
       </noscript>
 
-      {/* ── TikTok Pixel — add ID here when available ── */}
-      {/* <Script id="tiktok-pixel" strategy="afterInteractive">{`
+      {/* ── TikTok Pixel ── */}
+      <Script id="tiktok-pixel" strategy="afterInteractive">{`
         !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
         ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
         ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
@@ -33,9 +33,9 @@ export default function App({ Component, pageProps }) {
         ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");
         o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;
         var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-        ttq.load('REPLACE_WITH_TIKTOK_PIXEL_ID');
+        ttq.load('DADIJH3C77UDHLL3H230');
         ttq.page();
-      `}</Script> */}
+      `}</Script>
 
       <Component {...pageProps} />
     </>
