@@ -1,0 +1,64 @@
+Day,Date,Platform,Content Type,Topic / Hook,Done?,Notes,Priority
+,,,,,,NOTE: Day 1 assumed = Aug 25 2026. Today = Aug 28 (Day 4). Adjust if your actual launch date differs.,
+1,Aug 25,Twitter,Launch thread,"Full 10-tweet thread — copy from launch_content_package.txt Section 1",✅ or blank,Post all 10 tweets in one thread,HIGH
+1,Aug 25,TikTok/Reel,Video 1,"POV: 2 hrs on YouTube descriptions — ALREADY POSTED ✅",✅,Done!,HIGH
+1,Aug 25,Reddit,Reddit post,"r/makinghiphop — 'I built a free beat tool' — copy from launch_content_package.txt Section 3",,Paste body from file — Reddit blocked in Chrome MCP so you must post manually,HIGH
+2,Aug 26,TikTok/Reel,Video 2,"All 5 tools walkthrough — film yourself going through each tool",,Script in launch_content_package.txt Section 2 Video 2,HIGH
+2,Aug 26,DM,Outreach batch 1,"10 cold DMs — BeatStars producers",,Use targets from Outreach Tracker. Use Version A template.,HIGH
+3,Aug 27,Twitter,Single tweet,"Beat Titles demo — show input → output",,Example: 'input: dark trap 140bpm / output: [5 titles from BeatScript]',MED
+3,Aug 27,Reddit,Reddit post,"r/WeAreTheMusicMakers — BeatStars SEO tips — copy from launch_content_package.txt Section 3",,Year error fixed. Paste manually.,MED
+4,Aug 28,TikTok/Reel,Video 3,"$9 tool replaced my $50/hr assistant",,"← TODAY. Script in launch_content_package.txt Section 2 Video 3",HIGH
+4,Aug 28,Twitter,Single tweet,"YouTube SEO demo — input → full output",,Screenshot or screen record the output,MED
+5,Aug 29,Twitter,Single tweet,"'The free plan is actually free' — debunk skeptic",,Example: 'No trial. No card. Just 1 free gen/tool/day forever.',MED
+5,Aug 29,DM,Outreach batch 2,"10 warm DMs — producers you already follow",,Use Version B template from Outreach Tracker,MED
+6,Aug 30,TikTok/Reel,Video,"'Caption I wrote vs. BeatScript caption' split screen",,Side-by-side comparison — your manual attempt vs AI output,MED
+6,Aug 30,Reddit,Reddit comment,"Find an active thread asking about BeatStars SEO — add value then mention tool",,Search r/WeAreTheMusicMakers or r/makinghiphop for active threads,MED
+7,Aug 31,Twitter,Single tweet,"Social Captions demo — show IG + TikTok outputs",,Screenshot the dual output,MED
+7,Aug 31,Reddit,Reddit post,"r/Entrepreneur — 'Built a niche SaaS' post",,⚠️ STILL NEEDS [X weeks] filled in the title — ask Jerron,MED
+8,Sep 01,TikTok/Reel,Video,"'How I write 20 beat titles in 5 minutes'",,Speed run through the tool with voiceover,MED
+8,Sep 01,Twitter,Single tweet,"Producer Bio demo — before/after example",,,LOW
+9,Sep 02,DM,Outreach batch 3,"10 cold DMs — YouTube beat channel producers",,Find channels with 1K–10K subs — check Outreach Tracker for targets,MED
+9,Sep 02,Twitter,Single tweet,"License Pricing demo — show lease description output",,,LOW
+10,Sep 03,TikTok/Reel,Video,"Reaction video: producers' responses to BeatScript",,Only do this if you have real replies/screenshots by now,MED
+10,Sep 03,Twitter,Single tweet,"'What does your beat upload checklist look like?'",,Engagement tweet — get replies you can screenshot,LOW
+11,Sep 04,Twitter,Engagement tweet,"Poll: 'How long do you spend on beat marketing?'",,Twitter/X native poll — 4 options: <15min / 15-30min / 30-60min / 1hr+,LOW
+11,Sep 04,Reddit,Reddit comment,"r/makinghiphop active thread — add value no spam",,Find a hot thread and contribute genuinely,LOW
+12,Sep 05,TikTok/Reel,Video,"'3 YouTube title mistakes killing your views'",,Educational angle → soft CTA at end,MED
+12,Sep 05,Twitter,Single tweet,"Repost top-performing tweet from Day 1–5",,Check analytics — repost the one with most engagement,LOW
+13,Sep 06,Twitter,Single tweet,"'Pro plan = less than a WAV lease' value frame",,Tweet: '$9/month. A WAV lease on BeatStars is $20-50. BeatScript unlimited is $9. Do the math.',MED
+13,Sep 06,DM,Outreach batch 4,"10 cold DMs — producers in niche genres",,Target drill/phonk/melodic trap producers specifically,MED
+14,Sep 07,TikTok/Reel,Video,"'week 1 after using BeatScript' update video",,Talk through your experience using your own tool,MED
+14,Sep 07,Twitter,Single tweet,"'Free tools I use to run my beat store' list",,List 3-5 tools including BeatScript — honest resource post,LOW
+15,Sep 08,Twitter,Single tweet,"Midpoint CTA tweet — link + free plan reminder",,Clean CTA: 'BeatScript is free to try. beatflow-content-studio.vercel.app',MED
+15,Sep 08,Reddit,Reddit post,"r/WeAreTheMusicMakers — update / 'built v1.1'",,Post only if you have a real update or feature to share,LOW
+16,Sep 09,TikTok/Reel,Video,"'What happens when I generate 50 beat titles'",,Fun/entertainment format,LOW
+16,Sep 09,Twitter,Engagement tweet,"'What genre do you produce most?' + CTA response",,Reply to every answer with a BeatScript example for their genre,LOW
+17,Sep 10,Twitter,Thread,"Tip thread: YouTube SEO for beat channels (5 points)",,Repurpose the Reddit r/WATMM content into tweet format,MED
+17,Sep 10,Reddit,Reddit comment,"r/makinghiphop — answer 'how to write good bio'",,Search that sub for bio-related questions,LOW
+18,Sep 11,TikTok/Reel,Video,"'I described my beat wrong — here's what changed'",,Relatable mistake — show before/after BeatScript output,LOW
+18,Sep 11,Twitter,Single tweet,"Quote from a real user (once you have one)",,Screenshot a DM or comment — ONLY if real and with permission,MED
+19,Sep 12,Twitter,Single tweet,"New feature tease (roadmap item — email copy etc.)",,Only tease if you're actually building something new,LOW
+19,Sep 12,DM,Outreach batch 5,"10 warm DMs — follow-ups from batch 1 no-replies",,Use Version C (follow-up) template — brief and low-pressure,MED
+20,Sep 13,TikTok/Reel,Tutorial,"'Set up your BeatStars SEO in 10 minutes'",,Deep value video — walk through the full setup process,MED
+20,Sep 13,Twitter,Single tweet,"'Things I'd tell myself about beat marketing'",,List tweet — 5-7 lessons,LOW
+21,Sep 14,Twitter,Thread,"'5 copywriting principles for beat sellers'",,Authority-building content,MED
+21,Sep 14,Reddit,Reddit post,"r/Entrepreneur — 3-week update / growth learnings",,Be honest about numbers — builders love transparency,MED
+22,Sep 15,TikTok/Reel,Video,"Collab: DM a producer and use the tool together",,Co-created content if you can find a willing producer,LOW
+22,Sep 15,Twitter,Single tweet,"Behind the build — 'why I made BeatScript' story",,Authenticity content,LOW
+23,Sep 16,Twitter,Single tweet,"Pro plan CTA with clear value bullet list",,Conversion push: list what you get for $9,HIGH
+23,Sep 16,Reddit,Reddit comment,"r/WeAreTheMusicMakers — answer licensing question",,Organic reach,LOW
+24,Sep 17,TikTok/Reel,Video,"'Before BeatScript vs. after BeatScript' comparison",,Conversion content,HIGH
+24,Sep 17,Twitter,Engagement tweet,"'What's the hardest part of marketing your beats?'",,Community insight,LOW
+25,Sep 18,Twitter,Single tweet,"Feature callout: Social Captions tool — IG vs TT",,Show dual output screenshot,LOW
+25,Sep 18,DM,Outreach batch 6,"10 DMs — producers with recent YouTube uploads",,Check YouTube for recent beat uploads,MED
+26,Sep 19,TikTok/Reel,Video,"'How I batch my entire week of content in 1 hr'",,Workflow demo using BeatScript,MED
+26,Sep 19,Twitter,Single tweet,"Reshare best-performing tweet from week 3",,Check analytics before picking,LOW
+27,Sep 20,Twitter,Thread,"'BeatStars algorithm — what I actually know'",,Authority + traffic,MED
+27,Sep 20,Reddit,Reddit post,"r/makinghiphop — share a free tool + resource list",,Community value post,LOW
+28,Sep 21,TikTok/Reel,Video,"Month 1 recap: signups / feedback / what's next",,Transparency and trust,HIGH
+28,Sep 21,Twitter,Single tweet,"Thank you post + updated link",,Goodwill post,MED
+29,Sep 22,Twitter,Single tweet,"Announce upcoming new tool",,Only if you have something real to announce,MED
+29,Sep 22,DM,Outreach batch 7,"10 DMs — producers who engaged with your content",,Warm conversion — they already know you,MED
+30,Sep 23,Twitter,Thread,"Month 1 learnings thread — full story",,Big authority piece,HIGH
+30,Sep 23,TikTok/Reel,Video,"'30 days of BeatScript — here's what happened'",,Milestone content,HIGH
+30,Sep 23,Reddit,Reddit post,"r/Entrepreneur — 30-day SaaS update post",,Be specific with numbers — signups / revenue / traffic,HIGH

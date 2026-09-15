@@ -1,0 +1,138 @@
+================================================================
+BEATSCRIPT — TWITTER / X POSTING QUEUE
+Post these in order as the days come. Under 280 chars each.
+================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 1 — LAUNCH THREAD (10 tweets — post as a thread)
+If not posted yet, post all 10 back to back as one thread.
+Full copy is in launch_content_package.txt Section 1.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 3 — Beat Titles Demo Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+input: "dark trap, 140bpm, aggressive"
+
+BeatScript output:
+→ Midnight Carnage
+→ Hollow Crown
+→ Devil's Ledger
+→ Blacked Out Empire
+→ No Mercy Season
+
+5 professional titles. 8 seconds.
+
+free at beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 4 — YouTube SEO Demo Tweet  (TODAY — post this today)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I used to spend 30 minutes writing YouTube descriptions for every beat.
+
+BeatScript does it in one click:
+
+→ SEO title
+→ keyword-rich description
+→ 20 tags
+
+input was just "dark trap beat, 140bpm"
+
+free: beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 5 — "Free plan is actually free" Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+the BeatScript free plan is not a trial
+
+→ no credit card
+→ no time limit
+→ 1 generation per tool per day, forever
+
+you can generate a beat title, a YouTube SEO kit, AND a caption
+today without spending a dollar
+
+beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 7 — Social Captions Demo Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+same beat. three different captions.
+
+IG: "This one hits different at 2am 🌙 New melodic drill — link in bio"
+TikTok: "POV: you need a vibe for tonight 🎧 #melodicdrill #typebeat"
+Twitter: "new melodic drill just dropped. link below if you need it."
+
+BeatScript generates all 3 from one input.
+
+free: beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 8 — Producer Bio Demo Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+bad producer bio:
+"I make beats in Atlanta. Influenced by Drake and Travis Scott."
+
+BeatScript bio (same inputs):
+"Atlanta-based producer crafting dark, melodic trap with a cinematic
+edge. If you hear Travis Scott's atmosphere and Drake's precision —
+that's the pocket. Available for exclusives and placements."
+
+that's the difference between a bio and a sales page.
+
+free: beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 9 — License Pricing Demo Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+if buyers keep asking "what's included in your lease?"
+
+your license copy isn't clear enough
+
+BeatScript writes it for you:
+
+"MP3 Lease — $29.99. Includes tagged WAV + MP3. Up to 50,000 streams
+and 2,500 sales. For non-commercial releases. Credit required."
+
+no more DMs asking the same question.
+
+free: beatflow-content-studio.vercel.app
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DAY 13 — Pro Plan Value Tweet
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+a WAV lease on BeatStars runs $20–50
+
+BeatScript Pro is $9/month
+
+unlimited titles, YouTube SEO kits, captions, bios, and license copy
+for every beat you drop this month
+
+the math isn't complicated
+
+beatflow-content-studio.vercel.app/upgrade
+
+
+================================================================
+POST TIPS:
+- Screenshot BeatScript outputs to attach as images — visual tweets
+  outperform text-only by 2-3x
+- Reply to your own tweets with the follow-up: "try it free at
+  beatflow-content-studio.vercel.app" to keep the link active
+- Post between 10am–12pm or 7pm–9pm for highest reach
+================================================================

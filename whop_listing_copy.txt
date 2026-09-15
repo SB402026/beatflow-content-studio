@@ -1,305 +1,217 @@
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  BEATFLOW CONTENT STUDIO — WHOP LISTING COPY
-  Product URL: https://beatflow-content-studio.vercel.app
-  Target: Music producers selling beats on BeatStars
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+================================================================
+WHOP PRODUCT LISTING COPY — BeatScript
+Target Audience: Music producers selling beats on BeatStars
+================================================================
 
 
-━━ SECTION 1: PRODUCT HEADLINE (3 Options) ━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: PRODUCT HEADLINE (pick one, max 60 chars)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Option A (58 chars):
+Option A:
 Stop Writing. Start Selling. Marketing for Beat Makers.
+(55 chars)
 
-Option B (55 chars):
+Option B:
 AI Marketing Tools Built for Music Producers
+(45 chars)
 
-Option C (60 chars):
-More Plays. More Sales. Your Beat Marketing, Automated.
-
-Recommended: Option A — benefit-first, speaks directly to
-the frustration of sitting down to write copy instead of
-making music.
+Option C:
+Beat Store Copy, Bios & SEO — Done in Seconds
+(46 chars)
 
 
-━━ SECTION 2: SHORT TAGLINE (3 Options) ━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: SHORT TAGLINE (pick one, max 120 chars)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Option A (97 chars):
-Generate SEO titles, captions, bios & pricing copy for your
-beats — in seconds, not hours.
+Option A:
+Generate beat titles, YouTube SEO, artist bios & social captions in seconds. Built for producers who sell.
+(105 chars)
 
-Option B (113 chars):
-The only marketing toolkit built for beat makers. Write less.
-Sell more. Stay in the studio.
+Option B:
+The AI content toolkit that writes your marketing so you can focus on making beats.
+(83 chars)
 
-Option C (118 chars):
-5 AI-powered generators for beat titles, YouTube SEO, social
-captions, bios & license pricing.
-
-Recommended: Option B — works as a Whop subtitle and fits
-social bios. Clear contrast (write less / sell more).
+Option C:
+Stop losing sales to bad copy. BeatScript writes your store descriptions, bios, and captions — instantly.
+(103 chars)
 
 
-━━ SECTION 3: LONG DESCRIPTION (500 words) ━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: LONG DESCRIPTION (400–600 words)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
---- HOOK ---
+You make the beats. You shouldn't have to become a copywriter too.
 
-You make the beats. But somewhere between bouncing the file
-and making the sale, hours disappear — writing titles that
-don't rank, captions that get no engagement, bios that sound
-generic, and pricing copy that doesn't convert. You didn't
-get into production to become a copywriter. But in 2024,
-the producers who sell aren't just the best in the room —
-they're the best at marketing what's in the room.
+Most producers spend hours every week staring at a blank screen — trying to write the perfect beat store description, scrambling for a YouTube title that actually gets clicks, or recycling the same three Instagram captions because nothing else comes to mind. That's time you could spend in your DAW. Time you could spend closing licensing deals. Time that's just... gone.
 
---- SOLUTION ---
+BeatScript is the AI-powered marketing toolkit built specifically for music producers. It's not a generic AI tool you have to coax into understanding your world — every generator is purpose-built for the beat-selling industry, trained on the language that converts browsers into buyers on BeatStars, Airbit, and beyond.
 
-BeatFlow Content Studio is a free, browser-based toolkit that
-generates professional marketing copy for music producers in
-seconds. No prompts to engineer. No templates to fill in by
-hand. Just enter your producer name, beat details, genre, and
-artist style — and every generator instantly produces
-ready-to-use copy tailored to your sound.
+━━ WHAT YOU GET ━━
 
---- FEATURES ---
+1. Beat Titles Generator
+Enter your genre, mood, and tempo — get a batch of professional, searchable beat titles that stand out in crowded marketplaces and communicate value before the buyer even hits play.
 
-🎵 Beat Titles Generator
-Instantly get 6 SEO-ready beat titles plus BeatStars tags
-optimized to rank — so the right artists find your beats
-without you guessing at keywords.
+2. YouTube SEO Package
+Stop guessing at tags and descriptions. Generate complete YouTube SEO kits — title, description, and keyword tags optimized to surface your beats to the right audience and keep them watching.
 
-📺 YouTube SEO Package
-Get a full YouTube upload package: video title, description,
-and hashtag set built around your beat's genre and vibe, so
-every upload starts with a ranking advantage.
+3. Social Media Captions
+Post confidently across Instagram, TikTok, and X with scroll-stopping captions written in your voice. Includes hooks, hashtag sets, and engagement-driving CTAs tailored to each platform.
 
-📱 Social Media Captions
-Generate platform-ready captions for Instagram, TikTok, and
-Twitter that match your beat's mood and style — ready to post
-the moment you export.
+4. Producer Bio Writer
+A weak bio is a missed sale. BeatScript generates compelling artist bios for your beat store profile, website, and press kit — striking the right balance between credibility, personality, and professionalism.
 
-✍️ Producer Bio Writer
-Stop staring at a blank page. Get a sharp, professional
-producer bio in your own voice — perfect for BeatStars
-profiles, press kits, and collab pitches.
+5. License Pricing Copy
+Clear, persuasive license descriptions that explain your tier structure in plain language, reduce buyer confusion, and push fence-sitters toward the upgrade.
 
-💰 License Pricing Copy
-Turn your license tiers into compelling sales copy that
-communicates value, builds trust, and pushes artists toward
-the upgrade — without sounding like a terms sheet.
+━━ WHO IT'S FOR ━━
 
---- WHO IT'S FOR ---
+BeatScript is built for two types of producers:
 
-BeatFlow is built for producers at every level. If you're
-just building your catalog on BeatStars and need a consistent,
-professional presence without hiring a marketing team — this
-is your unfair advantage. If you're already established and
-losing time writing SEO copy, captions, and bios every upload
-cycle — this is the tool that gives that time back.
+Rising producers who are just establishing their brand and need professional-quality copy without the budget for a marketing agency. BeatScript gets you to market fast, with messaging that punches above your weight.
 
-Whether you're making Trap, Drill, R&B, Boom Bap, Afrobeats,
-or Lofi, every generator adapts to your genre and artist
-influences so the output sounds like it was written for your
-brand — not copied from a template.
+Established beat makers who already have catalog and customers but are tired of spending hours on marketing they know could be better. BeatScript eliminates the busywork so you can scale without burning out.
 
---- CTA ---
+If you sell beats online — whether you're moving 5 licenses a month or 500 — BeatScript gives you a consistent, professional marketing voice across every platform where buyers find you.
 
-Start free today. No credit card. No sign-up friction. Get
-your first beat titled, tagged, and captioned in under two
-minutes. When you're ready for unlimited daily generations
-and early access to every new tool we drop, upgrade to
-Producer Pro for less than your cheapest lease.
+━━ GET STARTED TODAY ━━
 
-Join free, upgrade when ready →
+Join free and start generating content in under 60 seconds — no credit card, no setup, no copywriting experience required. The Starter plan gives you a taste of every tool. When you're ready to go unlimited and unlock every feature as we ship them, upgrade to Producer Pro for less than the cost of a single beat lease. Your marketing backlog doesn't have to wait.
+
+━━ PRODUCT URL ━━
 https://beatflow-content-studio.vercel.app
 
 
-━━ SECTION 4: FEATURE BULLETS (Whop Highlights) ━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: FEATURE BULLETS (Whop highlights section)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✓ Beat Titles Generator — 6 SEO-ready titles + BeatStars tags instantly
-✓ YouTube SEO Package — full title, description & hashtag set per upload
-✓ Social Captions — platform-ready posts for IG, TikTok & Twitter
-✓ Producer Bio Writer — sharp, professional bio in your own voice
-✓ License Pricing Copy — copy that sells your tiers, not just lists them
-✓ Genre-aware output — adapts to Trap, Drill, R&B, Afrobeats & more
-✓ Zero setup required — browser-based, no installs or accounts needed
-✓ Free to start — 1 generation per tool per day, forever free
+✓ Beat Titles Generator — searchable names that sell before the preview plays
+✓ YouTube SEO Package — titles, descriptions & tags that actually rank
+✓ Social Media Captions — platform-specific posts with built-in CTAs
+✓ Producer Bio Writer — professional copy for BeatStars, press kits & web
+✓ License Pricing Copy — clear tier descriptions that reduce buyer confusion
+✓ Built for Beat Sellers — every tool speaks the language of your market
+✓ No copywriting skills needed — pro output in under 60 seconds
+✓ Free to start — upgrade only when you're ready to go unlimited
 
 
-━━ SECTION 5: PRICING TIER COPY ━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: PRICING TIER COPY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-─── FREE PLAN ────────────────────────────────────────────
+── FREE PLAN ──────────────────────────────────────────────────
 
-Plan Name:   Starter
-Price:       $0 — Free Forever
-
-Description:
-Everything you need to test every tool in BeatFlow Content
-Studio at no cost. The Starter plan includes 1 generation
-per tool per day — enough to title, tag, and caption one
-beat daily without spending a dollar.
-
-Best for:
-Producers just getting started on BeatStars who want
-professional marketing copy without a budget commitment.
-
-─── PRO PLAN ─────────────────────────────────────────────
-
-Plan Name:   Producer Pro
-Price:       $9/month  ·  or  $79/year (save $29)
-
-Most Popular Badge Copy:
-★ Most Popular — Used by 80% of active producers
+Plan Name: Starter
+Price: $0 — Free forever
 
 Description:
-Producer Pro removes all daily limits — run every generator
-as many times as you need, for as many beats as you drop.
-You also get priority access to every new tool we add to
-BeatFlow, including video script generators, email pitch
-templates, and collab outreach copy — all included at no
-extra charge as they launch.
+Get full access to all five BeatScript generators with 1 free generation per tool, per day. No credit card required — just sign up and start creating professional beat store copy immediately.
 
-At $9/month, Producer Pro costs less than a single standard
-lease. If it helps you sell one more beat per month, it pays
-for itself on day one.
+Best for: Producers who are just starting out, testing the platform before committing, or only need occasional content refreshes.
 
-Best for:
-Active beat makers uploading consistently to BeatStars and
-YouTube who need unlimited generations to keep up with their
-release schedule.
+── PRO PLAN ───────────────────────────────────────────────────
 
-Upgrade CTA:
-Go Pro — Unlimited Generations for $9/month →
+Plan Name: Producer Pro
+Price: $9/month — or save 27% at $79/year
+Badge: ⭐ Most Popular
+
+Description:
+Unlock unlimited generations across every BeatScript tool and get priority access to every new generator we ship. Producer Pro members get early access to beta features, higher output quality settings, and dedicated support — everything a serious beat seller needs to stay consistent and professional across every channel.
+
+Best for: Active producers who release beats regularly and need a reliable, unlimited content workflow to match their output.
+
+Highlight badge copy: "⭐ Most Popular — The choice of working producers"
 
 
-━━ SECTION 6: FAQ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: FAQ (8 Questions)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Q1: Do I need to know how to code?
-Not at all. BeatFlow Content Studio runs entirely in your
-browser. You fill in a short form — producer name, beat
-title, genre, artist style — and click Generate. No accounts,
-no setup, no technical knowledge required.
+Q1. Do I need to know how to code?
+Not at all. BeatScript is a web app — you open it in any browser, fill in a few fields about your beat or brand, and click Generate. No technical knowledge, no installations, no learning curve. If you can type, you can use it.
 
-Q2: Does this work for any genre?
-Yes. BeatFlow supports Trap, Drill, UK Drill, Melodic Trap,
-R&B/Soul, Boom Bap, Afrobeats, Pop, Lofi Hip-Hop, and Jersey
-Club — with more genres added based on producer feedback.
-Every generator adapts its output to your selected genre and
-artist influences so the copy feels specific to your sound.
+Q2. Does this work for any genre?
+Yes. Whether you make trap, drill, lo-fi, afrobeats, reggaeton, R&B, or anything in between, BeatScript generates copy that fits your sound. Just describe your genre and mood in the input fields and the tools tailor the output to match your style.
 
-Q3: Is there a free trial?
-There's no trial period — because the free plan is free
-forever. You get 1 generation per tool per day at no cost,
-no credit card required. Use it as long as you want before
-deciding if Pro is worth it.
+Q3. Is there a free trial?
+The Starter plan is free forever — not a trial. You get one generation per tool per day at no cost, indefinitely. There's no time limit and no credit card required to get started. The free plan exists so you can see real results before you ever spend a dollar.
 
-Q4: Can I cancel anytime?
-Yes. Producer Pro is month-to-month with no lock-in. Cancel
-from your Whop dashboard at any time and you'll retain Pro
-access until the end of your current billing period. Annual
-subscribers can cancel renewal at any time.
+Q4. Can I cancel anytime?
+Yes, absolutely. Producer Pro is a monthly (or annual) subscription with no lock-in. You can cancel from your Whop account dashboard at any time and you won't be charged again. If you cancel a yearly plan early, you retain access through the end of your billing period.
 
-Q5: What's included in the free plan?
-The Starter (free) plan includes access to all 5 tools —
-Beat Titles, YouTube SEO, Social Captions, Bio Writer, and
-License Pricing Copy — with 1 generation per tool per day.
-You get the full output quality, just limited to one run
-per generator per 24 hours.
+Q5. What's included in the free plan?
+The Starter plan includes access to all five generators — Beat Titles, YouTube SEO Package, Social Media Captions, Producer Bio Writer, and License Pricing Copy — with a limit of one generation per tool per day. It's designed to be genuinely useful, not a teaser.
 
-Q6: How is this different from ChatGPT?
-ChatGPT is a general-purpose tool — you have to engineer
-detailed prompts, fix the output, and re-run it multiple
-times to get anything usable for beats. BeatFlow is built
-specifically for music producers: every generator already
-knows what BeatStars needs, how YouTube SEO works for beats,
-and what makes license copy convert. You fill in one form
-and get production-ready output, every time.
+Q6. How is this different from ChatGPT?
+ChatGPT is a general-purpose AI — you have to prompt it, guide it, and edit heavily to get beat-industry-specific output. BeatScript is purpose-built for music producers: the inputs, the outputs, and the underlying prompts are all designed around the beat-selling market. You get better results in fewer clicks, without needing to know how to "talk" to an AI.
 
-Q7: Do you add new generators?
-Yes — new tools are in development, including video script
-generators for YouTube Shorts/Reels, cold email templates
-for artist outreach, and press kit copy. Producer Pro
-subscribers get early access to every new generator as it
-launches, included in their existing plan.
+Q7. Do you add new generators?
+Yes, actively. We have additional tools in development including Email Campaign Copy, BeatStars Profile Optimizer, and a Playlist Pitch Generator. Producer Pro members get early access to every new tool we ship. Follow the product page or join the Pro plan to stay ahead.
 
-Q8: Will this work on mobile?
-Yes. BeatFlow Content Studio is fully responsive and works
-on iPhone, Android, and any modern mobile browser. Generate
-titles, captions, and bios from your phone between sessions
-— no desktop required.
+Q8. Will this work on mobile?
+Yes. BeatScript is fully responsive and works on iPhone, Android, and any tablet browser. Whether you're at the studio or on the go, you can generate and copy content directly from your phone in seconds.
 
 
-━━ SECTION 7: WHOP SETUP CHECKLIST ━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7: WHOP SETUP CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Use this checklist to go live on Whop from scratch.
+□ 1. CREATE YOUR COMPANY ON WHOP
+   - Go to whop.com → click "Sell on Whop" → create your company
+   - Company name: BeatScript (or your brand name)
+   - Category: Software / Productivity Tools
 
-□ Step 1 — Create your company on Whop
-  → Go to whop.com and sign up as a seller
-  → Create a new company/brand (use "BeatFlow" or your
-    producer name)
-  → Complete identity verification if prompted
+□ 2. UPLOAD YOUR LOGO
+   - Recommended size: 512×512 px minimum, 1:1 square ratio
+   - Format: PNG with transparent background preferred
+   - Keep it clean — it appears small in the marketplace grid
 
-□ Step 2 — Upload your logo
-  → Recommended size: 500×500px minimum, 1:1 square ratio
-  → Format: PNG with transparent background preferred
-  → Keep it clean — it appears as a small icon in
-    marketplace listings
+□ 3. ADD PRODUCT HEADLINE AND DESCRIPTION
+   - Headline: choose from Section 1 above (max 60 chars)
+   - Short tagline: choose from Section 2 (for store subtitle)
+   - Long description: paste Section 3 in full
+   - Whop uses a rich text editor — apply paragraph breaks and bold
+     to the sub-headers (WHAT YOU GET, WHO IT'S FOR, etc.)
 
-□ Step 3 — Add your product headline and description
-  → Product name: BeatFlow Content Studio
-  → Headline: use Section 1, Option A
-  → Short subtitle: use Section 2, Option B
-  → Long description: paste Section 3 in full
-  → Link to product: https://beatflow-content-studio.vercel.app
+□ 4. SET PRICING TIERS
+   - Create FREE plan: name "Starter", $0, 1 gen/tool/day access
+   - Create PRO plan: name "Producer Pro", $9/mo or $79/yr
+   - Enable the "Most Popular" badge on Producer Pro
+   - Copy plan descriptions from Section 5
 
-□ Step 4 — Set up pricing tiers
-  → Create Free tier: name "Starter", price $0
-    Paste Section 5 Starter description
-  → Create Pro tier: name "Producer Pro", price $9/month
-    Add annual option at $79/year
-    Paste Section 5 Pro description
-    Enable "Most Popular" badge on Pro tier
+□ 5. ADD FEATURE BULLETS (Whop Highlights section)
+   - Paste all 8 bullets from Section 4
+   - Whop renders these as a highlights grid — keep the ✓ symbol
 
-□ Step 5 — Add feature bullets (Highlights section)
-  → Paste all 8 bullets from Section 4
-  → Whop displays these as a visual checklist — keep
-    each bullet under 12 words
+□ 6. UPLOAD GALLERY IMAGES
+   - Recommended: 3–5 images, 1600×900 px, PNG or JPG
+   - Image 1: Hero banner — product name + main tagline on dark bg
+   - Image 2: Screenshot of the Beat Titles Generator in use
+   - Image 3: Screenshot of the YouTube SEO Package output
+   - Image 4: Screenshot of Social Media Captions tool
+   - Image 5: Side-by-side Starter vs. Pro plan comparison graphic
 
-□ Step 6 — Upload gallery images
-  → Image 1: Full app screenshot (desktop view showing
-    the sidebar form + output panel)
-  → Image 2: Mobile screenshot showing a generated
-    Beat Titles output
-  → Image 3: YouTube SEO output example
-  → Image 4: Social Captions output example
-  → Image 5: Side-by-side "before/after" — blank page
-    vs. generated bio
-  → Recommended size: 1280×720px (16:9), PNG or JPG
-  → Add a short caption to each image
+□ 7. ADD FAQ
+   - Paste all 8 Q&A pairs from Section 6
+   - Whop FAQ section supports plain text — no markdown needed
 
-□ Step 7 — Add your FAQ
-  → Navigate to the FAQ section of your Whop product editor
-  → Paste all 8 Q&A pairs from Section 6
-  → Reorder if needed — put Q3 (free trial) and Q5
-    (free plan) near the top as they address the most
-    common objections
+□ 8. SET YOUR PRODUCT URL
+   - In product settings → Custom URL → set to: beatscript-studio
+   - Your listing will be live at: whop.com/beatscript-studio
 
-□ Step 8 — Set your product URL
-  → In Whop product settings, set the custom URL slug to:
-    beatflow-studio
-  → Your Whop page will be: whop.com/beatflow-studio
+□ 9. SUBMIT FOR MARKETPLACE REVIEW
+   - Go to product → Page tab → click "Get listed on Discover"
+   - Confirm all 5 checklist items are green:
+       ✓ Business logo
+       ✓ Product title
+       ✓ Product headline
+       ✓ Product description
+       ✓ Product media
+   - Click "List on Discover" — review typically takes 1–3 business days
+   - You'll receive a Whop notification when approved
 
-□ Step 9 — Submit for marketplace review
-  → Go to Settings → Marketplace in your Whop dashboard
-  → Click "Submit for Review"
-  → Whop review typically takes 24–48 hours
-  → While waiting: share your direct product link on
-    Twitter/X, Instagram, and in producer Discord servers
-    to start building a waitlist before approval
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  END OF WHOP LISTING COPY
-  Saved: 2026-05-25
-  Product: BeatFlow Content Studio
-  Live URL: https://beatflow-content-studio.vercel.app
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+================================================================
+END OF FILE — BeatScript Whop Listing Copy
+================================================================

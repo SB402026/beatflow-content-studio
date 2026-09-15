@@ -1,0 +1,158 @@
+================================================================
+BEATSCRIPT — REDDIT POSTING QUEUE
+Post these in order. Copy title → paste → copy body → paste → submit.
+Reddit is behind a login wall so you must post manually.
+================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 1 — r/makinghiphop  (post this FIRST — most direct audience)
+URL: https://reddit.com/r/makinghiphop/submit
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TITLE:
+I built a free beat marketing tool — would love feedback from producers who actually use BeatStars
+
+BODY:
+Hey — I'm a producer and I got frustrated enough with the marketing
+side of selling beats that I just built something to fix it for myself.
+Figured I'd share it here in case it's useful to anyone else.
+
+It's called BeatScript. It's a web app with 5 AI
+generators specifically built for beat sellers:
+
+Beat Titles Generator — you put in genre, mood, BPM and it generates
+professional, searchable names
+
+YouTube SEO Package — full title, description and tag set, optimized
+for search
+
+Social Media Captions — IG, TikTok, and Twitter versions with hashtags
+
+Producer Bio Writer — give it your style and influences, get a full
+BeatStars-ready bio
+
+License Pricing Copy — clear descriptions for your lease/exclusive
+tiers
+
+The free plan gives you 1 use per tool per day with no credit card
+required. Pro is $9/month for unlimited.
+
+I built this because I was tired of spending 45 minutes on marketing
+after spending 3 hours on the actual beat. Still rough around the
+edges in places but the tools work.
+
+URL: beatflow-content-studio.vercel.app
+
+Honest feedback welcome — what's missing? What would actually make
+your marketing workflow easier?
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 2 — r/WeAreTheMusicMakers  (post this SECOND — SEO tips angle)
+URL: https://reddit.com/r/WeAreTheMusicMakers/submit
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TITLE:
+A few things I learned about BeatStars SEO that actually moved the needle
+
+BODY:
+I've been selling beats for a while and spent an embarrassing amount
+of time testing what actually affects visibility on BeatStars and
+YouTube. Here's what I found genuinely useful — not theory, just
+what's worked:
+
+1. Titles matter more than most people think
+Vague titles tank your search placement. "Dark Type Beat 2026" is
+garbage. Specific titles — genre + mood + BPM + era — perform
+significantly better. "Dark Trap Beat 2026 | Emotional Minor Key 140
+BPM" gets found. The former doesn't.
+
+2. Your YouTube description is basically free SEO real estate
+Most producers write two sentences. The algorithm wants 150–300 words
+with natural keyword placement — genre, mood, tempo, artist comparisons,
+and a clear CTA. Beats with proper descriptions get surfaced way more
+in suggested video. It's tedious to write but the payoff is real.
+
+3. Consistency on social matters more than virality
+I've seen producers with 800 followers outperform ones with 80,000 in
+actual licensing revenue. The difference is posting consistently and
+using platform-native language. TikTok sounds are different from IG
+captions are different from tweets. Repurposing one caption across all
+three doesn't work anymore.
+
+4. Your bio is a sales page, not a resume
+"I make beats in [city], influenced by [artist]" doesn't convert. A
+strong bio tells buyers what you make, who it's for, and why it sounds
+different. Short, punchy, specific.
+
+Anyway — I got tired of doing all of this manually so I built a free
+tool called BeatScript that handles the writing side of
+it (titles, YouTube SEO kits, captions, bios, license copy). It's at
+beatflow-content-studio.vercel.app if anyone wants to try it. Free
+plan available, no sign-up friction.
+
+Happy to answer any questions about the SEO stuff regardless — this
+isn't a sales pitch, just sharing what actually worked.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 3 — r/Entrepreneur  (post this THIRD — builder community)
+URL: https://reddit.com/r/Entrepreneur/submit
+⚠️  NEEDS ACTION: Replace [X weeks] in the title with the real number.
+    How many weeks from when you started building to launch?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TITLE:
+I built a niche SaaS for music producers — $0 to launched in 4 weeks. Here's what I learned.
+
+BODY:
+Long-time lurker, first time posting about something I actually built.
+
+Background: I'm a music producer. I've been selling beats online for
+a while and kept running into the same problem — I'd finish a beat,
+then spend as much time on the marketing copy (YouTube descriptions,
+titles, social captions, bio updates) as I did making the track. It
+was a real bottleneck.
+
+So I built a solution: BeatScript.
+
+It's a web app with 5 AI content generators purpose-built for beat
+sellers. Beat titles, YouTube SEO packages, social captions, producer
+bios, license pricing copy. Free tier with a $9/month Pro plan.
+
+A few things I learned building it that might be useful here:
+
+NICHE IS AN ADVANTAGE
+The beat-selling market is specific. Beat sellers have specific
+language, specific platforms (BeatStars, Airbit, YouTube), and
+specific pain points. Generic AI tools don't speak that language.
+Building something narrow let me make something genuinely better
+than telling a producer to "just use ChatGPT."
+
+FREE TIER IS YOUR GROWTH ENGINE
+I debated whether to have a free plan at all. Decided to make it
+genuinely useful (1 gen/tool/day, no card, no time limit) rather
+than a crippled teaser. The goal is to get producers into the habit
+of using it before asking for money.
+
+DISTRIBUTION IS THE HARD PART
+The build was the easy part. Getting in front of producers who would
+actually use it is the real work. Currently focused on Reddit, TikTok
+demos, and direct outreach to producers on BeatStars. Interested to
+hear how others have approached niche SaaS distribution.
+
+Live at: beatflow-content-studio.vercel.app
+
+Happy to answer questions about the build, the stack, or the go-to-
+market. Not here to spam — genuinely curious what this community
+thinks about the niche SaaS approach.
+
+
+================================================================
+AFTER POSTING — what to do:
+1. Check back every 2–4 hours and reply to every comment (Reddit
+   rewards engagement and it boosts the post in the feed)
+2. Screenshot any positive replies — these become social proof tweets
+3. Note the post URL in the Content Calendar tracker once posted
+================================================================
