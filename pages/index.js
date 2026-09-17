@@ -5,6 +5,8 @@ import {
   GENRES, ARTISTS, MOODS, PLATFORMS,
 } from "../lib/generators";
 import { canUse, recordUse, getRemainingAll, TOOL_KEYS, FREE_LIMIT } from "../lib/usage";
+import { useSubscription } from "../lib/useSubscription";
+import UpgradeModal from "../components/UpgradeModal";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -49,51 +51,6 @@ function UsagePip({ remaining, isPro }) {
   );
 }
 
-function UpgradeModal({ onClose }) {
-  return (
-    <div style={S.modalOverlay} onClick={onClose}>
-      <div style={S.modal} onClick={e => e.stopPropagation()} className="fade-up">
-        <div style={{ fontSize: 40, marginBottom: 12 }}>🔒</div>
-        <div style={{ fontFamily: "Bebas Neue", fontSize: 36, letterSpacing: "0.05em", marginBottom: 8 }}>
-          Daily Limit Reached
-        </div>
-        <div style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.7, marginBottom: 28, maxWidth: 320 }}>
-          Free accounts get <strong style={{ color: "var(--text)" }}>1 generation per tool per day</strong>.
-          Upgrade to Pro for unlimited generations, priority output, and new tools every month.
-        </div>
-
-        <div style={S.pricingCard}>
-          <div style={{ fontFamily: "Bebas Neue", fontSize: 28, letterSpacing: "0.05em" }}>BeatScript Pro</div>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 4, margin: "8px 0 4px" }}>
-            <span style={{ fontFamily: "Bebas Neue", fontSize: 48, color: "var(--accent)" }}>$9</span>
-            <span style={{ color: "var(--muted)", fontSize: 14 }}>/month</span>
-          </div>
-          <div style={{ color: "var(--muted)", fontSize: 13, marginBottom: 20 }}>or $79/year — save 26%</div>
-          {["Unlimited generations on all 5 tools","New generators added monthly","Priority output speed","Export to .txt one click","Early access to new features"].map(f => (
-            <div key={f} style={{ display: "flex", gap: 10, alignItems: "flex-start", marginBottom: 10 }}>
-              <span style={{ color: "var(--success)", flexShrink: 0 }}>✓</span>
-              <span style={{ fontSize: 13, color: "var(--text)" }}>{f}</span>
-            </div>
-          ))}
-          <button style={S.ctaBtn} onClick={() => {
-            window.fbq?.('track', 'InitiateCheckout', { value: 9, currency: 'USD' });
-            window.open('https://whop.com/beatscript-studio/', '_blank');
-          }}>
-            Upgrade to Pro →
-          </button>
-          <div style={{ fontSize: 11, color: "var(--muted)", textAlign: "center", marginTop: 10 }}>
-            Cancel anytime · Instant access
-          </div>
-        </div>
-
-        <button onClick={onClose} style={{ marginTop: 20, background: "none", border: "none", color: "var(--muted)", cursor: "pointer", fontSize: 13 }}>
-          Maybe later
-        </button>
-      </div>
-    </div>
-  );
-}
-
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 export default function Home() {
@@ -101,7 +58,7 @@ export default function Home() {
   const [result,     setResult]     = useState("");
   const [copied,     setCopied]     = useState(false);
   const [showModal,  setShowModal]  = useState(false);
-  const [isPro,      setIsPro]      = useState(false);
+  const { isPro, loading: subLoading } = useSubscription();
   const [remaining,  setRemaining]  = useState({});
 
   // Core inputs
@@ -177,14 +134,21 @@ export default function Home() {
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              {!isPro && (
-                <button style={S.upgradeBtn} onClick={() => {
-                  window.fbq?.('track', 'InitiateCheckout', { value: 9, currency: 'USD' });
-                  setShowModal(true);
-                }}>
-                  Upgrade to Pro
-                </button>
-              )}
+              <button
+                onClick={() => !isPro && setShowModal(true)}
+                style={{
+                  background: "transparent",
+                  border: "2px solid #ff6b35",
+                  color: "#ff6b35",
+                  padding: "8px 18px",
+                  borderRadius: "8px",
+                  cursor: isPro ? "default" : "pointer",
+                  fontWeight: "700",
+                  fontSize: "14px",
+                }}
+              >
+                {isPro ? "✅ Pro Active" : "Upgrade to Pro"}
+              </button>
             </div>
           </div>
         </header>
