@@ -1,44 +1,35 @@
-import Stripe from 'stripe';
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
 export default async function handler(req, res) {
   const { session_id } = req.query;
-  if (!session_id) return res.status(400).json({ success: false, error: 'Missing session_id' });
+  if (!session_id) return res.status(400).json({ error: 'Missing session_id' });
+
+  const secretKey = process.env.STRIPE_SECRET_KEY;
 
   try {
-    const session = await stripe.checkout.sessions.retrieve(session_id, {
-      expand: ['subscription', 'customer'],
-    });
+    const response = await fetch(
+      `https://api.stripe.com/v1/checkout/sessions/${encodeURIComponent(session_id)}`,
+      {
+        headers: { Authorization: `Bearer ${secretKey}` },
+      }
+    );
 
-    const paid =
-      session.payment_status === 'paid' || session.status === 'complete';
+    const session = await response.json();
 
-    if (!paid) {
+    if (!response.ok) {
+      return res.status(500).json({ error: session.error?.message || 'Stripe error' });
+    }
+
+    if (session.payment_status !== 'paid') {
       return res.json({ success: false });
     }
 
-    const email = session.customer_details?.email || session.customer?.email || '';
-    const customerId =
-      typeof session.customer === 'string'
-        ? session.customer
-        : session.customer?.id;
-    const subscriptionId =
-      typeof session.subscription === 'string'
-        ? session.subscription
-        : session.subscription?.id;
-
-    // Determine plan from price ID
-    const priceId =
-      session.subscription?.items?.data?.[0]?.price?.id ||
-      session.line_items?.data?.[0]?.price?.id;
-
-    const plan =
-      priceId === process.env.STRIPE_ANNUAL_PRICE_ID ? 'annual' : 'monthly';
-
-    res.json({ success: true, email, customerId, subscriptionId, plan });
+    res.json({
+      success: true,
+      email: session.customer_details?.email,
+      customerId: session.customer,
+      subscriptionId: session.subscription,
+      plan: session.metadata?.plan || 'pro',
+    });
   } catch (err) {
-    console.error('verify-session error:', err.message);
-    res.status(500).json({ success: false, error: err.message });
+    res.status(500).json({ error: err.message });
   }
 }
