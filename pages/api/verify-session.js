@@ -1,35 +1,56 @@
-export default async function handler(req, res) {
-  const { session_id } = req.query;
-  if (!session_id) return res.status(400).json({ error: 'Missing session_id' });
+// pages/api/verify-session.js
+// After Whop checkout, verifies the user's new membership is active.
+// Called from the /success page with the user's email.
+// (Replaces the old Stripe session verification — Whop doesn't use session IDs)
 
-  const secretKey = process.env.STRIPE_SECRET_KEY;
+export default async function handler(req, res) {
+  if (req.method !== 'GET') return res.status(405).end();
+
+  const { email } = req.query;
+  if (!email) return res.status(400).json({ error: 'Email required' });
+
+  const apiKey = process.env.WHOP_API_KEY;
+  if (!apiKey) return res.status(500).json({ error: 'Whop not configured' });
+
+  const WHOP_PRODUCT_ID = 'prod_zkdSsdhQlDvQe';
 
   try {
-    const response = await fetch(
-      `https://api.stripe.com/v1/checkout/sessions/${encodeURIComponent(session_id)}`,
-      {
-        headers: { Authorization: `Bearer ${secretKey}` },
-      }
-    );
+    const url = new URL('https://api.whop.com/v5/memberships');
+    url.searchParams.set('email', email);
+    url.searchParams.set('product_id', WHOP_PRODUCT_ID);
+    url.searchParams.set('status', 'active');
 
-    const session = await response.json();
+    const response = await fetch(url.toString(), {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    const data = await response.json();
 
     if (!response.ok) {
-      return res.status(500).json({ error: session.error?.message || 'Stripe error' });
+      console.error('Whop verify error:', JSON.stringify(data));
+      return res.status(500).json({ error: data.message || 'Whop API error' });
     }
 
-    if (session.payment_status !== 'paid') {
-      return res.json({ success: false });
-    }
+    const memberships = data.data || [];
+    const membership = memberships.find(
+      (m) => m.status === 'active' && m.product_id === WHOP_PRODUCT_ID
+    );
 
-    res.json({
-      success: true,
-      email: session.customer_details?.email,
-      customerId: session.customer,
-      subscriptionId: session.subscription,
-      plan: session.metadata?.plan || 'pro',
-    });
+    if (membership) {
+      res.json({
+        success: true,
+        plan: membership.plan_id,
+        validUntil: membership.renewal_period_end,
+      });
+    } else {
+      res.json({ success: false });
+    }
   } catch (err) {
+    console.error('verify-session error:', err.message);
     res.status(500).json({ error: err.message });
   }
 }
