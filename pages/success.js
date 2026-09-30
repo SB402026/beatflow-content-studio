@@ -3,184 +3,216 @@ import { useRouter } from 'next/router';
 
 export default function Success() {
   const router = useRouter();
-  const [status, setStatus] = useState('loading'); // loading | success | error
+  const [status, setStatus] = useState('loading'); // loading | ask-email | verifying | success | error
   const [email, setEmail] = useState('');
+  const [inputEmail, setInputEmail] = useState('');
   const [plan, setPlan] = useState('');
 
   useEffect(() => {
-    const { session_id } = router.query;
-    if (!session_id) return;
+    const { email: queryEmail } = router.query;
+    if (!router.isReady) return;
+    if (queryEmail) {
+      setEmail(queryEmail);
+      verify(queryEmail);
+    } else {
+      setStatus('ask-email');
+    }
+  }, [router.isReady, router.query]);
 
-    fetch(`/api/verify-session?session_id=${session_id}`)
+  function verify(emailToCheck) {
+    setStatus('verifying');
+    fetch(`/api/verify-session?email=${encodeURIComponent(emailToCheck)}`)
       .then((r) => r.json())
       .then((data) => {
         if (data.success) {
-          // Save to localStorage — useSubscription will pick this up
           const proData = {
-            email: data.email,
-            customerId: data.customerId,
-            subscriptionId: data.subscriptionId,
-            plan: data.plan,
+            email: emailToCheck,
+            plan: data.plan || 'pro',
             isPro: true,
             lastVerified: Date.now(),
             since: new Date().toISOString(),
+            validUntil: data.validUntil || null,
           };
-          localStorage.setItem('beatscript_pro', JSON.stringify(proData));
-          setEmail(data.email);
-          setPlan(data.plan);
+          try { localStorage.setItem('beatscript_pro', JSON.stringify(proData)); } catch (_) {}
+          setEmail(emailToCheck);
+          setPlan(data.plan || 'pro');
           setStatus('success');
-        } else {
-          setStatus('error');
-        }
+        } else { setStatus('error'); }
       })
       .catch(() => setStatus('error'));
-  }, [router.query]);
+  }
 
+  function handleEmailSubmit(e) {
+    e.preventDefault();
+    if (!inputEmail.trim()) return;
+    verify(inputEmail.trim());
+  }
+
+  if (status === 'loading') {
+    return (
+      <div style={styles.container}>
+        <div style={styles.card}>
+          <div style={styles.spinner} />
+          <p style={styles.loadingText}>Verifying your access...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (status === 'ask-email') {
+    return (
+      <div style={styles.container}>
+        <div style={styles.card}>
+          <div style={styles.iconWrap}>🎵</div>
+          <h1 style={styles.title}>Confirm Your Access</h1>
+          <p style={styles.subtitle}>Enter the email you used to purchase BeatScript Pro.</p>
+          <form onSubmit={handleEmailSubmit} style={styles.form}>
+            <input
+              type="email"
+              value={inputEmail}
+              onChange={(e) => setInputEmail(e.target.value)}
+              placeholder="you@example.com"
+              style={styles.input}
+              required
+              autoFocus
+            />
+            <button type="submit" style={styles.button}>Verify Access →</button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
+  if (status === 'verifying') {
+    return (
+      <div style={styles.container}>
+        <div style={styles.card}>
+          <div style={styles.spinner} />
+          <p style={styles.loadingText}>Checking membership...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div style={styles.container}>
+        <div style={styles.card}>
+          <div style={styles.iconWrap}>⚠️</div>
+          <h1 style={styles.title}>Access Not Found</h1>
+          <p style={styles.subtitle}>
+            We couldn't verify a BeatScript Pro membership for <strong>{email}</strong>.
+          </p>
+          <p style={{ ...styles.subtitle, marginTop: 8 }}>
+            Make sure you're using the same email from your Whop purchase.
+          </p>
+          <button onClick={() => { setStatus('ask-email'); setInputEmail(''); }} style={styles.button}>
+            Try a Different Email
+          </button>
+          <a href="https://whop.com/beatscript-eaf8/" style={styles.link}>Get BeatScript Pro →</a>
+        </div>
+      </div>
+    );
+  }
+
+  // success
   return (
-    <div style={styles.page}>
+    <div style={styles.container}>
       <div style={styles.card}>
-        {status === 'loading' && (
-          <>
-            <div style={styles.spinner}>⚡</div>
-            <h2 style={styles.heading}>Activating your Pro account...</h2>
-          </>
-        )}
-
-        {status === 'success' && (
-          <>
-            <div style={styles.checkmark}>🎉</div>
-            <h1 style={styles.heading}>You're now BeatScript Pro!</h1>
-            <p style={styles.sub}>
-              Confirmed for <strong>{email}</strong>
-              {plan === 'annual' && (
-                <span style={styles.badge}> Annual Plan</span>
-              )}
-              {plan === 'monthly' && (
-                <span style={styles.badge}> Monthly Plan</span>
-              )}
-            </p>
-            <ul style={styles.perks}>
-              <li>✅ Unlimited Beat Titles</li>
-              <li>✅ Unlimited YouTube SEO</li>
-              <li>✅ Unlimited Social Captions</li>
-              <li>✅ Unlimited Bio Writer</li>
-              <li>✅ Unlimited Pricing Copy</li>
-            </ul>
-            <button style={styles.btn} onClick={() => router.push('/')}>
-              Start Generating →
-            </button>
-            <p style={styles.fine}>
-              A receipt was sent to your email. Manage your subscription at{' '}
-              <a
-                href="https://billing.stripe.com/p/login/test_xxx"
-                style={{ color: '#ff6b35' }}
-              >
-                the billing portal
-              </a>
-              .
-            </p>
-          </>
-        )}
-
-        {status === 'error' && (
-          <>
-            <div style={styles.checkmark}>⚠️</div>
-            <h2 style={styles.heading}>Something went wrong</h2>
-            <p style={styles.sub}>
-              Your payment may have gone through — check your email for a
-              Stripe receipt. If you were charged,{' '}
-              <a href="mailto:support@beatscriptapp.com" style={{ color: '#ff6b35' }}>
-                contact support
-              </a>{' '}
-              and we'll activate your account manually.
-            </p>
-            <button style={styles.btn} onClick={() => router.push('/')}>
-              Back to BeatScript
-            </button>
-          </>
-        )}
+        <div style={styles.iconWrap}>🎉</div>
+        <h1 style={styles.title}>You're In!</h1>
+        <p style={styles.subtitle}>
+          BeatScript Pro is now active for <strong>{email}</strong>.
+          {plan && <span> Plan: <strong>{plan}</strong></span>}
+        </p>
+        <button onClick={() => router.push('/')} style={styles.button}>
+          Open BeatScript →
+        </button>
       </div>
     </div>
   );
 }
 
 const styles = {
-  page: {
+  container: {
     minHeight: '100vh',
-    background: '#0d0d1a',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '16px',
-    fontFamily: 'system-ui, -apple-system, sans-serif',
+    background: '#0d0d1a',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    padding: '24px 16px',
   },
   card: {
-    background: '#1a1a2e',
-    border: '1px solid #2a2a4a',
-    borderRadius: '20px',
-    padding: '48px 40px',
-    maxWidth: '480px',
+    background: '#161628',
+    border: '1px solid #2a2a45',
+    borderRadius: 16,
+    padding: '40px 36px',
+    maxWidth: 440,
     width: '100%',
     textAlign: 'center',
+  },
+  iconWrap: {
+    fontSize: 48,
+    marginBottom: 20,
+  },
+  title: {
+    color: '#e8e8f0',
+    fontSize: '1.6rem',
+    fontWeight: 700,
+    marginBottom: 12,
+  },
+  subtitle: {
+    color: '#9090b0',
+    fontSize: '0.95rem',
+    lineHeight: 1.6,
+    marginBottom: 24,
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12,
+  },
+  input: {
+    background: '#0d0d1a',
+    border: '1px solid #2a2a45',
+    borderRadius: 8,
+    color: '#e8e8f0',
+    fontSize: '1rem',
+    padding: '12px 14px',
+    outline: 'none',
+    width: '100%',
+  },
+  button: {
+    background: '#ff6b35',
+    border: 'none',
+    borderRadius: 8,
     color: '#fff',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    fontWeight: 600,
+    padding: '12px 24px',
+    width: '100%',
+    marginTop: 4,
+  },
+  link: {
+    color: '#ff6b35',
+    display: 'block',
+    fontSize: '0.9rem',
+    marginTop: 16,
+    textDecoration: 'none',
   },
   spinner: {
-    fontSize: '48px',
-    marginBottom: '16px',
-    display: 'block',
-    animation: 'pulse 1s infinite',
+    width: 40,
+    height: 40,
+    border: '3px solid #2a2a45',
+    borderTop: '3px solid #ff6b35',
+    borderRadius: '50%',
+    animation: 'spin 0.8s linear infinite',
+    margin: '0 auto 20px',
   },
-  checkmark: {
-    fontSize: '56px',
-    marginBottom: '16px',
-    display: 'block',
-  },
-  heading: {
-    margin: '0 0 12px',
-    fontSize: '26px',
-    fontWeight: '700',
-  },
-  sub: {
-    color: '#aaa',
-    fontSize: '15px',
-    marginBottom: '24px',
-  },
-  badge: {
-    background: '#ff6b35',
-    color: '#fff',
-    fontSize: '11px',
-    fontWeight: '700',
-    padding: '2px 8px',
-    borderRadius: '4px',
-    marginLeft: '6px',
-    verticalAlign: 'middle',
-  },
-  perks: {
-    listStyle: 'none',
-    padding: 0,
-    margin: '0 0 32px',
-    textAlign: 'left',
-    display: 'inline-block',
-    lineHeight: '2',
-    fontSize: '15px',
-    color: '#ccc',
-  },
-  btn: {
-    background: '#ff6b35',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '10px',
-    padding: '14px 32px',
-    fontSize: '16px',
-    fontWeight: '700',
-    cursor: 'pointer',
-    display: 'block',
-    width: '100%',
-    marginBottom: '20px',
-  },
-  fine: {
-    fontSize: '12px',
-    color: '#555',
-    margin: 0,
+  loadingText: {
+    color: '#9090b0',
+    fontSize: '0.95rem',
   },
 };
