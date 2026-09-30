@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 export default function Success() {
   const router = useRouter();
-  const [status, setStatus] = useState('loading'); // loading | ask-email | verifying | success | error
+  const [status, setStatus] = useState('loading');
   const [email, setEmail] = useState('');
   const [inputEmail, setInputEmail] = useState('');
   const [plan, setPlan] = useState('');
@@ -34,26 +34,25 @@ export default function Success() {
             validUntil: data.validUntil || null,
           };
           try { localStorage.setItem('beatscript_pro', JSON.stringify(proData)); } catch (_) {}
+          if (typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'Purchase', { value: 19.00, currency: 'USD' });
+          }
           setEmail(emailToCheck);
           setPlan(data.plan || 'pro');
           setStatus('success');
-        } else { setStatus('error'); }
+        } else {
+          setStatus('error');
+        }
       })
       .catch(() => setStatus('error'));
-  }
-
-  function handleEmailSubmit(e) {
-    e.preventDefault();
-    if (!inputEmail.trim()) return;
-    verify(inputEmail.trim());
   }
 
   if (status === 'loading') {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <div style={styles.spinner} />
-          <p style={styles.loadingText}>Verifying your access...</p>
+          <div style={styles.spinner}></div>
+          <p style={styles.text}>Verifying your subscription...</p>
         </div>
       </div>
     );
@@ -63,21 +62,22 @@ export default function Success() {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <div style={styles.iconWrap}>🎵</div>
-          <h1 style={styles.title}>Confirm Your Access</h1>
-          <p style={styles.subtitle}>Enter the email you used to purchase BeatScript Pro.</p>
-          <form onSubmit={handleEmailSubmit} style={styles.form}>
-            <input
-              type="email"
-              value={inputEmail}
-              onChange={(e) => setInputEmail(e.target.value)}
-              placeholder="you@example.com"
-              style={styles.input}
-              required
-              autoFocus
-            />
-            <button type="submit" style={styles.button}>Verify Access →</button>
-          </form>
+          <h1 style={styles.title}>Confirm Your Email</h1>
+          <p style={styles.text}>Enter the email address you used to purchase BeatScript Pro.</p>
+          <input
+            type="email"
+            value={inputEmail}
+            onChange={(e) => setInputEmail(e.target.value)}
+            placeholder="your@email.com"
+            style={styles.input}
+            onKeyDown={(e) => e.key === 'Enter' && verify(inputEmail)}
+          />
+          <button
+            onClick={() => verify(inputEmail)}
+            style={styles.button}
+          >
+            Verify Access
+          </button>
         </div>
       </div>
     );
@@ -87,8 +87,8 @@ export default function Success() {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <div style={styles.spinner} />
-          <p style={styles.loadingText}>Checking membership...</p>
+          <div style={styles.spinner}></div>
+          <p style={styles.text}>Verifying {email}...</p>
         </div>
       </div>
     );
@@ -98,36 +98,34 @@ export default function Success() {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <div style={styles.iconWrap}>⚠️</div>
           <h1 style={styles.title}>Access Not Found</h1>
-          <p style={styles.subtitle}>
-            We couldn't verify a BeatScript Pro membership for <strong>{email}</strong>.
+          <p style={styles.text}>
+            We couldn&apos;t verify your subscription. Make sure you&apos;re using the email
+            you signed up with on Whop.
           </p>
-          <p style={{ ...styles.subtitle, marginTop: 8 }}>
-            Make sure you're using the same email from your Whop purchase.
-          </p>
-          <button onClick={() => { setStatus('ask-email'); setInputEmail(''); }} style={styles.button}>
-            Try a Different Email
+          <button onClick={() => setStatus('ask-email')} style={styles.button}>
+            Try Again
           </button>
-          <a href="https://whop.com/beatscript-eaf8/" style={styles.link}>Get BeatScript Pro →</a>
+          <a href="https://whop.com/beatscript-eaf8/" style={styles.link}>
+            Get BeatScript Pro →
+          </a>
         </div>
       </div>
     );
   }
 
-  // success
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <div style={styles.iconWrap}>🎉</div>
-        <h1 style={styles.title}>You're In!</h1>
-        <p style={styles.subtitle}>
-          BeatScript Pro is now active for <strong>{email}</strong>.
-          {plan && <span> Plan: <strong>{plan}</strong></span>}
+        <div style={styles.checkmark}>✓</div>
+        <h1 style={styles.title}>You&apos;re In!</h1>
+        <p style={styles.text}>
+          Welcome to BeatScript Pro{plan ? ` (${plan})` : ''}. Your account is active.
         </p>
-        <button onClick={() => router.push('/')} style={styles.button}>
-          Open BeatScript →
-        </button>
+        <p style={styles.emailBadge}>{email}</p>
+        <a href="/" style={styles.button}>
+          Start Creating →
+        </a>
       </div>
     </div>
   );
@@ -139,80 +137,85 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: '#0d0d1a',
+    background: 'linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 100%)',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-    padding: '24px 16px',
+    padding: '20px',
   },
   card: {
-    background: '#161628',
-    border: '1px solid #2a2a45',
-    borderRadius: 16,
-    padding: '40px 36px',
-    maxWidth: 440,
-    width: '100%',
+    background: 'rgba(255,255,255,0.05)',
+    border: '1px solid rgba(255,107,53,0.3)',
+    borderRadius: '16px',
+    padding: '48px 40px',
     textAlign: 'center',
-  },
-  iconWrap: {
-    fontSize: 48,
-    marginBottom: 20,
+    maxWidth: '420px',
+    width: '100%',
   },
   title: {
-    color: '#e8e8f0',
-    fontSize: '1.6rem',
-    fontWeight: 700,
-    marginBottom: 12,
+    color: '#ffffff',
+    fontSize: '28px',
+    fontWeight: '700',
+    marginBottom: '16px',
   },
-  subtitle: {
-    color: '#9090b0',
-    fontSize: '0.95rem',
-    lineHeight: 1.6,
-    marginBottom: 24,
+  text: {
+    color: 'rgba(255,255,255,0.7)',
+    fontSize: '16px',
+    lineHeight: '1.6',
+    marginBottom: '24px',
   },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 12,
-  },
-  input: {
-    background: '#0d0d1a',
-    border: '1px solid #2a2a45',
-    borderRadius: 8,
-    color: '#e8e8f0',
-    fontSize: '1rem',
-    padding: '12px 14px',
-    outline: 'none',
-    width: '100%',
+  emailBadge: {
+    color: '#ff6b35',
+    fontSize: '14px',
+    fontWeight: '600',
+    marginBottom: '24px',
+    background: 'rgba(255,107,53,0.1)',
+    padding: '8px 16px',
+    borderRadius: '20px',
+    display: 'inline-block',
   },
   button: {
-    background: '#ff6b35',
+    display: 'inline-block',
+    background: 'linear-gradient(135deg, #ff6b35, #ff4500)',
+    color: '#ffffff',
+    padding: '14px 32px',
+    borderRadius: '8px',
+    fontWeight: '600',
+    fontSize: '16px',
     border: 'none',
-    borderRadius: 8,
-    color: '#fff',
     cursor: 'pointer',
-    fontSize: '1rem',
-    fontWeight: 600,
-    padding: '12px 24px',
-    width: '100%',
-    marginTop: 4,
-  },
-  link: {
-    color: '#ff6b35',
-    display: 'block',
-    fontSize: '0.9rem',
-    marginTop: 16,
     textDecoration: 'none',
+    marginTop: '8px',
+  },
+  input: {
+    width: '100%',
+    padding: '12px 16px',
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    borderRadius: '8px',
+    color: '#ffffff',
+    fontSize: '16px',
+    marginBottom: '16px',
+    boxSizing: 'border-box',
+    outline: 'none',
   },
   spinner: {
-    width: 40,
-    height: 40,
-    border: '3px solid #2a2a45',
+    width: '40px',
+    height: '40px',
+    border: '3px solid rgba(255,107,53,0.2)',
     borderTop: '3px solid #ff6b35',
     borderRadius: '50%',
-    animation: 'spin 0.8s linear infinite',
+    animation: 'spin 1s linear infinite',
     margin: '0 auto 20px',
   },
-  loadingText: {
-    color: '#9090b0',
-    fontSize: '0.95rem',
+  checkmark: {
+    fontSize: '48px',
+    color: '#ff6b35',
+    marginBottom: '16px',
+  },
+  link: {
+    display: 'block',
+    color: 'rgba(255,255,255,0.5)',
+    marginTop: '16px',
+    fontSize: '14px',
+    textDecoration: 'none',
   },
 };
